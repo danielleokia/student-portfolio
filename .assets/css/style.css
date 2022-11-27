@@ -3,16 +3,22 @@
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
+    text-decoration: none;
+}
+div{
+    display: flex;
 }
 
 body {
-    background-color: rgb(189, 142, 166);
+    background-color: rgb(142, 180, 189);
 }
+
 .header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 30px;
-    background-color: gainsboro;
+    background-color:bisque;
     color: rgb(31, 56, 171);
+    
 }
 
 .header h1{
@@ -49,8 +55,9 @@ body {
     font-weight: 400;
 }
 
+
 section{
-    height: 15vh;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,36 +67,111 @@ section{
 }
 
 .text {
-    font-size: 20px;
+    font-size: 10px;
     font-family: 'Courier New', Courier, monospace;
-    text-align: right;
+    text-align: center;
     float: right;
     display: flex;
 }
 
-.mypicture {
-    float: left;
-    display:flex;
-    width: 20px;
-    height: 350px;
 
+
+#container-about {
+    display: flex;
+    align-items: center;
+    
+
+   
 }
-/*.container {
+#container-about img{
+    margin: 20px;
+    width: 100%;
+    float: left;
+    padding: 20px;
+}
+#container-about p{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+#container-work{
     display: flex;
     flex-wrap: wrap;
-}*/
+    justify-content: center;
 
-.placeholderimage{
-    float: right;
-    display: flex;
+}
+
+.placeholderimage1 {
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 20px;
     margin-right: 20px;
+    margin-left: 20px ;
+    display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+
+}
+.placeholderimage2 {
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px ;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.placeholderimage3 {
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px ;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
-.project1 {
-    display: flex;
+
+
+button {
+    height: 70px;
+    width: 400px;
+    margin: 50px;
+    background-color:rgba(red, green, blue, alpha);
+    border-radius: 30px;
+    font-size: 20px;
+    overflow-wrap: break-word;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
+
+.call {
+    margin-left: 100px;
+}
+.email{
+margin-left: 80px;
+
+}
+
+button hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+ img, p, header {
+    width: 50%;
+ }
+}
+
+ @media screen and (max-width: 600px) {
+   img, p, header {
+        width: 100%;
+    }
+ }
+ 
+    
+  
+  
 
